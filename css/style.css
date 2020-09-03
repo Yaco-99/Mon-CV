@@ -27,6 +27,7 @@
   text-align: center;
 }
 .photo img {
+  object-fit: cover;
   margin: auto;
   height: 170px;
   width: 170px;
