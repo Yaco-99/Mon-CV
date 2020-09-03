@@ -29,6 +29,9 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+.sec-gauche p {
+  white-space: nowrap;
+}
 .sec-droite {
   margin-left: 70px;
 }
