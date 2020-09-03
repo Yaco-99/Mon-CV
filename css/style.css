@@ -1,31 +1,105 @@
-body {
-}
 .pages {
+  display: grid;
+  grid-template-columns: 34% 66%;
   width: 780px;
   margin: auto;
   font-size: 16px;
-  padding: 40px;
-  border: 5px solid rgb(53, 53, 255);
+  padding-right: 40px;
+  border: 5px solid rgb(36, 36, 36);
+  border-left: none;
   border-radius: 10px;
   box-shadow: 2px 4px 3px black;
   background-color: rgb(224, 224, 224);
 }
+.left {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
 .infophoto {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
   height: 250px;
   display: flex;
 }
 .photo {
-  margin-left: auto;
+  margin-top: 24px;
+  text-align: center;
 }
 .photo img {
-  height: 250px;
+  margin: auto;
+  height: 170px;
+  width: 170px;
+}
+.info {
+  margin-left: 15px;
+  margin-bottom: 20%;
+}
+.info a {
+  color: white;
+  text-decoration: none;
+}
+.right {
+  margin-left: 15px;
 }
 .section {
-  display: flex;
   margin-bottom: 70px;
   text-align: justify;
 }
+#firstSection {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 25% 25% 25% 25%;
+  align-items: center;
+}
+#secondSection {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 40% 38% 22%;
+  align-items: center;
+}
+#thirdSection {
+  display: grid;
+  grid-template-columns: 27% 73%;
+  grid-template-rows: 25% 25% 25%;
+  align-items: center;
+}
+#fourthSection {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% 30%;
+  align-items: center;
+}
+.one {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.two {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.three {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.four {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.five {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.six {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.seven {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
 .sec-gauche {
+  grid-column-start: 1;
   font-weight: bold;
   font-size: 20px;
 }
@@ -33,16 +107,16 @@ body {
   white-space: nowrap;
 }
 .sec-droite {
-  margin-left: 70px;
+  grid-column-start: 2;
 }
 strong {
   font-size: 26px;
 }
 h2 {
   font-size: 28px;
-  color: rgb(53, 53, 255);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
-  border-bottom: 3px solid rgb(53, 53, 255);
+  border-bottom: 3px solid rgb(0, 0, 0);
 }
 .titre {
   font-weight: bold;
@@ -55,6 +129,9 @@ h2 {
 #forma-gauche-deux p {
   margin-bottom: 35px;
   margin-top: 16px;
+}
+#sec-droite-lg {
+  margin-left: 10px;
 }
 #sec-droite-lg p {
   margin-top: 23px;
